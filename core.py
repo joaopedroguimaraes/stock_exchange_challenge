@@ -22,9 +22,3 @@ def lowest_value(array):
 def highest_profit_on_stock_exchange(stock_values):
     lower, lower_pos = lowest_value(stock_values)
     return max(stock_values[lower_pos:]) - lower
-
-
-if __name__ == '__main__':
-    stock_values_per_day = [7, 1, 5, 3, 6, 4]
-    # stock_values_per_day = [7,6,4,3,1]
-    print(highest_profit_on_stock_exchange(stock_values_per_day))
